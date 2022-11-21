@@ -55,6 +55,8 @@ class ImageAdapter(private val imageList: ArrayList<Avatars>, private val viewPa
 
         holder.itemView.setOnClickListener {
             avatar = imageList[position].img
+            Log.e("badri",position.toString())
+            if (position == 0) notifyItemChanged(1) else notifyItemChanged(0)
             holder.itemView.setBackgroundResource(R.drawable.slected_drawable)
         }
     }
