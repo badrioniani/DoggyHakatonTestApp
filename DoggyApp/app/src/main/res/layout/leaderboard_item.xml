@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:paddingStart="12dp"
     android:paddingTop="8dp"
+    android:background="@drawable/leaderboard_background"
     android:layout_marginTop="8dp"
-    android:elevation="8dp"
     android:paddingBottom="8dp"
     android:paddingEnd="12dp"
     android:layout_height="wrap_content">
@@ -22,6 +22,7 @@
 
     <TextView
         android:id="@+id/textView3"
+        android:textColor="#757ef4"
         android:layout_marginStart="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,12 +36,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="345"
+        android:drawablePadding="8dp"
+        android:textColor="#f6a400"
+        android:drawableEnd="@drawable/group_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/rank"
+        android:textColor="#757ef4"
         android:layout_width="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_height="wrap_content"

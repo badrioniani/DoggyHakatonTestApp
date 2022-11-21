@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="LOGN"
+        android:textColor="#757ef4"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,6 +21,9 @@
 
     <TextView
         android:id="@+id/coinsMain"
+        android:drawableEnd="@drawable/group_3"
+        android:drawablePadding="8dp"
+        android:textColor="#f6a400"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -36,6 +40,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="LeaderBoard"
+        android:textColor="#757ef4"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +65,47 @@
         app:layout_constraintEnd_toStartOf="@+id/firstPlace"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#757ef4"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:text="rank:1\n Logn"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlace"
+        app:layout_constraintStart_toStartOf="@+id/firstPlace"
+        app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="rank:2\nLogan"
+        android:textColor="#757ef4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlace"
+        app:layout_constraintStart_toStartOf="@+id/secondPlace"
+        app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="rank:3\nLogen"
+        android:textColor="#757ef4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlace"
+        app:layout_constraintStart_toStartOf="@+id/thirdPlace"
+        app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
+
+
+
     <ImageView
         android:id="@+id/thirdPlace"
         android:layout_width="90dp"
@@ -71,15 +117,77 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/leaderboard"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leaderboard_background"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="24dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avatar5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Your Podition"
+            android:textColor="#757ef4"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/group_3"
+            android:drawablePadding="8dp"
+            android:text="345"
+            android:textColor="#f6a400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="rank: 23"
+            android:textColor="#757ef4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#757ef4"
+        android:textSize="24sp"
         android:text="Choose your Avatar"
         app:layout_constraintBottom_toTopOf="@+id/viewPager2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,6 +20,9 @@
 
     <TextView
         android:id="@+id/coins"
+        android:drawablePadding="8dp"
+        android:textColor="#f6a400"
+        android:drawableEnd="@drawable/group_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
