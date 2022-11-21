@@ -20,6 +20,47 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/group_3"
+        android:drawablePadding="8dp"
+        android:text="400"
+        android:textColor="#f6a400"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlace"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:drawableEnd="@drawable/group_3"
+        android:drawablePadding="8dp"
+        android:text="300"
+        android:textColor="#f6a400"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/group_3"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="8dp"
+        android:text="350"
+        android:textColor="#f6a400"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
         android:id="@+id/coinsMain"
         android:drawableEnd="@drawable/group_3"
         android:drawablePadding="8dp"
@@ -32,6 +73,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -69,12 +111,11 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#757ef4"
-        android:textStyle="bold"
         android:layout_margin="8dp"
         android:text="rank:1\n Logn"
+        android:textColor="#757ef4"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/firstPlace"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/firstPlace"
         app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
 
@@ -82,12 +123,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
         android:text="rank:2\nLogan"
         android:textColor="#757ef4"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/secondPlace"
         app:layout_constraintStart_toStartOf="@+id/secondPlace"
         app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
 
@@ -95,12 +135,11 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
         android:text="rank:3\nLogen"
         android:textColor="#757ef4"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/thirdPlace"
         app:layout_constraintStart_toStartOf="@+id/thirdPlace"
         app:layout_constraintTop_toBottomOf="@+id/firstPlace" />
 
@@ -128,17 +167,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/leaderboard_background"
         android:paddingStart="12dp"
-        android:paddingTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingTop="16dp"
         android:paddingEnd="12dp"
         android:paddingBottom="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="24dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
 
         <ImageView
@@ -169,7 +209,7 @@
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/group_3"
             android:drawablePadding="8dp"
-            android:text="345"
+            android:text="40"
             android:textColor="#f6a400"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
